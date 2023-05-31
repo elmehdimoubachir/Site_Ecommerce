@@ -1,0 +1,196 @@
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header {
+    z-index: 1;
+      top:0;
+      width:100%;
+      position: fixed;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 50px 20px 30px ;
+    border-bottom:1px solid #aaa;
+  }
+
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    margin-right:10px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color:#2196F3;
+  }
+
+  .header a:hover {
+    border-bottom:3px solid dodgerblue;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+      float: none;
+    }
+  }
+  /* ********** */
+  .container {
+      padding: 64px;
+      margin-top:50px;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both
+  }
+
+  .column-66 {
+      float: left;
+      width: 66.66666%;
+      padding: 20px;
+  }
+
+  .column-33 {
+      float: left;
+      width: 33.33333%;
+      padding: 20px;
+  }
+
+  @media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+  }
+  /* ******************** */
+  #border{
+      text-align:center;;
+      padding:20px 0;
+  }
+  /* Remove extra left and right margins, due to padding */
+    .rows {margin: 5px 150px 5px 150px ;}
+      
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+      float: left;
+      width: 25%;
+      padding:  5px;
+      margin-bottom:10px;
+  }
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+      position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: left;
+    font-size:17px;
+    background-color: #fff;
+    outline: .1rem solid #ccc;
+   outline-offset: -0.8rem;
+  }
+  .card:hover{
+    outline: .2rem solid #222;
+   outline-offset: 0;
+  }
+  .card img{
+    margin:0 45px;
+    height: 12rem;
+    margin-bottom:10px;
+  }
+  .card img:hover{
+    transform: scale(.9);
+  }
+  .Roge{
+      position:absolute;
+      color: red;
+      font-size: 20px;
+      right:25px;
+      bottom:55px;
+  }
+  .update{
+      position:absolute;
+      left:14px;
+      bottom:14px;
+      width:120px;
+      padding:10px;
+      color:white;
+      background-color:lime;
+      border:none;
+      border-radius:15px;
+      
+  }
+  .delete{
+      position:absolute;
+      right:14px;
+      bottom:14px;
+      width:120px;
+      padding:10px;
+      color:white;
+      background-color:red;
+      border:none;
+      border-radius:15px;
+  }
+  /* ************ */
+  .CreateO{margin:10px 150px 50px 150px;}
+  .Pro{
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .Pro table tr td{
+    padding:10px;
+  }
+  .Offre:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Pro input{
+  width:250px;
+  padding:5px;
+}
+.btnpost{
+  float:right;
+  width:120px;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background-color:#2196F3;
+  color:white;
+}
